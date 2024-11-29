@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-grafPattern bg-current dark:bg-slate-900 dark:text-white font-poppins">
+  <div class="bg-overlay">
+    <header class="text-white top-0 z-10 lg:pt-9">
+      <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+        <!-- <h1 class="text-3xl font-medium">
+          <a href="#hero">🚀Acme Rockets</a>
+        </h1> -->
+        <div>
+          <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer relative w-8 h-8">
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500">
+            </div>
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl font-medium" aria-label="main">
+            <a href="#home"
+              class="rounded-md active:bg-gray-900 hover:bg-gray-700 px-3 py-2 text-xl font-medium text-white">Home</a>
+            <a href="#projects"
+              class="rounded-md active:bg-gray-900 hover:bg-gray-700 px-3 py-2 text-xl font-medium text-white">Projects</a>
+            <a href="#about"
+              class="rounded-md active:bg-gray-900 hover:bg-gray-700 px-3 py-2 text-xl font-medium text-white">About</a>
+          </nav>
+        </div>
+      </section>
+      <section id="mobile-menu"
+        class="absolute top-68 bg-slate-900 w-full text-xl font-medium flex-col justify-center origin-top animate-open-menu hidden">
+        <!-- <button class="text-7xl self-end px-6">
+                &times;
+            </button> -->
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+          <a href="#home" class="w-full text-center py-6 hover:opacity-90 text-4xl">Home</a>
+          <a href="#about" class="w-full text-center py-6 hover:opacity-90 text-4xl">About</a>
+          <a href="#projects" class="w-full text-center py-6 hover:opacity-90 text-4xl">Projects</a>
+        </nav>
+      </section>
+    </header>
+
+    <main class="max-w-6xl mx-auto">
+      <section id="home"
+        class="scroll-m-36 flex flex-col-reverse justify-center sm:flex-row p-6 items-center sm:gap-52 mb-12 widescreen:section-min-height tallscreen:section-min-height">
+        <article class="sm:w-1/2 mt-0">
+          <h2
+            class=" sm:relative max-w-md text-4xl font-bold text-center sm:text-6xl sm:text-left text-slate-900 dark:text-white text-nowrap">
+            Hi, I'm
+            <span
+              class="text-blue-700 dark:text-blue-300/55 font-graffiti md:text-9xl md:absolute md:left-[60%] md:-top-5">Kerbs</span>
+          </h2>
+          <h3 class="text-gray-50 font-medium mt-9 text-2xl text-center sm:text-left">FullStack Web Developer.</h3>
+          <p
+            class="max-x-md mt-9 text-base leading-relaxed sm:text-xl font-extralight text-justify text-slate-700 dark:text-gray-50 mb-8">
+            Hello, My name is Michael Kirby B. Rivera and I'm currently a fourth year BSIT student focusing intensively
+            on
+            learing web development and also UI/UX designing.
+          </p>
+          <a href="#about"
+            class="relative right-0 max-w-full text-xl sm:text-left text-gray-100 border border-blue-900 bg-blue-800 py-2 px-4 rounded-xl hover:bg-blue-500 hover:border-blue-400 hover:text-slate-900">
+            About me.
+        </a>
+        </article>
+        <!-- <img class="w-1/2" src="./img/image1.png" alt="" /> -->
+        <div class="sm:h-[80vh] sm:w-[1000px] mb-10">
+          <img src="img/image1.png"
+            class=" overflow-hidden sm:top-44 border-4 border-dashed border-gray-500 rounded-full sm:h-[70vh] sm:w-[70vh] sm:absolute">
+        </div>
+      </section>
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section id="projects" class="p-6 my-12 scroll-mt-10 widescreen:section-min-height tallscreen:section-min-height">
+        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate0-900 dark:text-white">
+          Projects
+        </h2>
+        
+        <!-- Project 1 -->
+        <div class="flex flex-col md:flex-row gap-6 mt-12">
+          <img src="img/Screenshot (2).png" alt="Simple EMS" class="rounded-md md:w-1/2">
+          <div class="border border-gray-100 w-full rounded-2xl p-6 md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 tracking-tight">Employee Management System</h2>
+            <p class="text-xl mb-6 tracking-tight">- A simple Employee Management System built with HTML, CSS, and PHP</p>
+            <div class="flex flex-col md:flex-row items-start md:pt-16 justify-between">
+              <div class="mb-4 md:mb-0">
+                <p class="text-lg"><b class="text-lg font-bold mb-5">Function:</b><br>- CRUD</p>
+              </div>
+              <a href="http://emsystem.42web.io/" class="font-graffiti text-xl hover:text-blue-500 pt-7">-> Click here to view Demo. <-</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Project 2 -->
+        <div class="flex flex-col-reverse md:flex-row gap-6 mt-12">
+          <div class="border border-gray-100 w-full rounded-2xl p-6 md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 tracking-tight">Simple Contact Form</h2>
+            <p class="text-xl mb-6 tracking-tight">- A simple Contact Form built with HTML, CSS, and PHP</p>
+            <div class="flex flex-col md:flex-row items-start md:pt-16 justify-between">
+              <div class="mb-4 md:mb-0">
+                <p class="text-lg"><b class="text-lg font-bold mb-5">Function:</b><br>- PHP form method</p>
+              </div>
+              <a href="https://github.com/KerbsD/Simple-Contact-Form" class="font-graffiti text-xl hover:text-blue-500 pt-7">-> Click here to view Demo. <-</a>
+            </div>
+          </div>
+          <img src="img/Screenshot (3).png" alt="Simple Contact Form" class="rounded-md md:w-1/2">
+        </div>
+      
+        <!-- Project 3 -->
+        <div class="flex flex-col md:flex-row gap-6 mt-12">
+          <img src="img/Screenshot (4).png" alt="Simple EMS" class="rounded-md md:w-1/2">
+          <div class="border border-gray-100 w-full rounded-2xl p-6 md:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 tracking-tight">To-do List App</h2>
+            <p class="text-xl mb-6 tracking-tight">- A simple To-do List App built with HTML, CSS, and JS</p>
+            <div class="flex flex-col md:flex-row items-start md:pt-16 justify-between">
+              <div class="mb-4 md:mb-0">
+                <p class="text-lg"><b class="text-lg font-bold mb-5">Function:</b><br>- CRUD</p>
+              </div>
+              <a href="https://github.com/KerbsD/To-Do-List" class="font-graffiti text-xl hover:text-blue-500 pt-7">-> Click here to view Demo. <-</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section id="about" class="p-6 my-12 scroll-mt-10">
+        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">About</h2>
+        <div class="flex flex-col sm:flex-row">
+          <div class="max-h-full mx-auto sm:m-0 bg-gray-700/60 rounded-2xl w-full sm:w-[40%] border border-gray-700 shadow-xl p-2 relative">
+            <h1 class="text-2xl mt-3 ml-3 tracking-wide text-gray-100 font-semibold">Personal Information:</h1>
+            <img src="img/formal pic.jpg" alt="" class="rounded-xl sm:h-3/6 mx-auto mt-2">
+            <h2 class="font-graffiti text-7xl sm:text-9xl md:block sm:absolute sm:top-[39vh] right-3 text-gray-100 font-black tracking-tighter bg-clip-text stroke hidden">Hello<b class="text-blue-700">!</b></h2>
+            <div class="p-2 mt-10">
+              <p class="text-xl font-bold text-gray-100 tracking-tight">Name:</p>
+              <p class="text-xl font-medium text-gray-100 ml-2 mb-2">Rivera, Michael Kirby B.</p>
+              <p class="text-xl font-bold text-gray-100 text-right tracking-tight">Age:</p>
+              <p class="text-xl font-medium text-gray-100 text-right ml-2 mb-2">22 years old.</p>
+            </div>
+            <hr class="mx-auto bg-slate-900 h-1 border-none rounded-full my-3 w-11/12" />
+            <h3 class="text-center text-xl tracking-tight">Certificate</h3>
+            <p class="text-lg mt-4 text-center font-extralight tracking-tight">Computer Systems Servicing - NCII</p>
+          </div>
+      
+          <div class="flex flex-col w-full sm:w-[60%] mt-5 sm:mt-0 sm:ml-5">
+            <div class="w-full p-5 rounded-2xl shadow-2xl border-gray-700 border bg-gray-700/60">
+              <h2 class="text-3xl font-semibold tracking-tight mb-3">Education</h2>
+              <p class="text-lg font-extralight mb-2">2021-2025</p>
+              <p class="text-xl">University of Rizal System - Cainta Campus</p>
+              <p class="text-xl font-extralight">Bachelor of Science in Information Technology</p>
+            </div>
+      
+            <div class="flex flex-col sm:flex-row mt-3">
+              <div class="w-full sm:w-[50%] p-5 rounded-2xl shadow-2xl border-gray-700 border bg-gray-700/60 mb-3 sm:mb-0">
+                <h2 class="text-3xl font-semibold tracking-tight mb-3">Personal Skills</h2>
+                <p class="text-xl font-extralight">- Good Communication Skill</p>
+                <p class="text-xl font-extralight">- Loves to Learn</p>
+                <p class="text-xl font-extralight">- Time Management</p>
+              </div>
+              <div class="w-full sm:w-[50%] sm:ml-3 p-5 rounded-2xl shadow-2xl border-gray-700 border bg-gray-700/60">
+                <h2 class="text-3xl font-semibold tracking-tight mb-3">Language</h2>
+                <p class="text-xl font-extralight">Filipino - Native</p>
+                <p class="text-xl font-extralight">English - Intermediate</p>
+              </div>
+            </div>
+      
+            <div class="w-full p-5 rounded-2xl shadow-2xl border-gray-700 border bg-gray-700/60 mt-3">
+              <h2 class="text-3xl font-semibold tracking-tight mb-3">Technical Skills</h2>
+              <p class="text-xl">Image Editing</p>
+              <p class="text-xl font-extralight mb-2">- Adobe Photoshop/Illustrator <sup class="text-sm">(Basic Photo Editing)</sup></p>
+              <p class="text-xl">Video Editing</p>
+              <p class="text-xl font-extralight mb-3">- Adobe Premier <sup class="text-sm">(Basic Video Editing)</sup></p>
+              <p class="text-xl">Programming</p>
+              <p class="text-xl font-extralight mb-3">- HTML, CSS, Tailwind CSS, Javascript, PHP <sup class="text-sm">(Intermediate)</sup></p>
+              <p class="text-xl">Database</p>
+              <p class="text-xl font-extralight mb-3">- MySql <sup class="text-sm">(Intermediate)</sup></p>
+              <p class="text-xl">Networking</p>
+              <p class="text-xl font-extralight mb-3">- Windows Server, Cisco Packet Tracer, Virtual Box <sup class="text-sm">(Beginner)</sup></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer id="footer" class="bg-blue-600 text-white text-xl md:mt-[150px]">
+      <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+        <address>
+          <a href="mailto:inquiries@acmerockets.com">michaelkirbyrivera@gmail.com</a><br />
+          Phone: <a href="tel:+15555555555">(+63) 985-209-6868</a>
+        </address>
+        <nav class="md:flex flex-col gap-2" aria-label="footer">
+          <a href="#home" class="hover:opacity-90">Go back to top</a>
+          <a href="#projects" class="hidden md:block hover:opacity-90">Projects</a>
+          <a href="#about" class="hidden md:block hover:opacity-90">About</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+          <p class="text-right">All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>
